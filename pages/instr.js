@@ -3,7 +3,7 @@ function Instrument(name, family, quantity, brands) {
   this.name = name;
   this.family = family;
   this.quantity = quantity;
- this.brands = brands;
+  this.brands = brands;
 }
 
 let violin = new Instrument("Violin", "strings", 5, "Yamaha-2, Amati-2, Fiddlerman-1");
@@ -31,27 +31,30 @@ const trumpetMore = document.querySelector('#trumpetMore');
 
 const details = document.querySelector('#details');
 
-let instrArray = [{instrument: violin, htmlElement: violinMore},{instrument: cello, htmlElement: celloMore},
-   {instrument: doubleBass, htmlElement: doubleBassMore},{instrument: guitar, htmlElement: guitarMore}, 
-   {instrument: flute, htmlElement: fluteMore}, {instrument:clarinet, htmlElement: clarinetMore}, 
-   {instrument: saxophone, htmlElement: saxophoneMore},{instrument: horn, htmlElement: hornMore}, 
-   {instrument: trumpet, htmlElement: trumpetMore}];
+let instrArray = [{ instrument: violin, htmlElement: violinMore }, { instrument: cello, htmlElement: celloMore },
+{ instrument: doubleBass, htmlElement: doubleBassMore }, { instrument: guitar, htmlElement: guitarMore },
+{ instrument: flute, htmlElement: fluteMore }, { instrument: clarinet, htmlElement: clarinetMore },
+{ instrument: saxophone, htmlElement: saxophoneMore }, { instrument: horn, htmlElement: hornMore },
+{ instrument: trumpet, htmlElement: trumpetMore }];
 
-instrArray.forEach(function(elem) {
-    elem.htmlElement.addEventListener('click', function () {
-          if (details.classList.contains('open')) {
-              details.classList.remove('open')
-              details.innerHTML= '';
-          } else { details.classList.add('open')
-          let name = document.createElement("p")
-          name.innerHTML = `Name: ${elem.instrument.name}`;
-          let family = document.createElement("p")
-          family.innerHTML = ` Family: ${elem.instrument.family}`;
-          let quantity = document.createElement("p")
-          quantity.innerHTML = `Quantity:${elem.instrument.quantity}`;  
-          let brands= document.createElement("p")
-         brands.innerHTML = ` Brands: ${elem.instrument.brands}`;   
-         details.append(name, family, quantity, brands); }
-         })});
+instrArray.forEach(function (elem) {
+  elem.htmlElement.addEventListener('click', function () {
+    if (details.classList.contains('open')) {
+      details.classList.remove('open')
+      details.innerHTML = '';
+    } else {
+      details.classList.add('open')
+      let name = document.createElement("p")
+      name.innerHTML = `Name: ${elem.instrument.name}`;
+      let family = document.createElement("p")
+      family.innerHTML = ` Family: ${elem.instrument.family}`;
+      let quantity = document.createElement("p")
+      quantity.innerHTML = `Quantity:${elem.instrument.quantity}`;
+      let brands = document.createElement("p")
+      brands.innerHTML = ` Brands: ${elem.instrument.brands}`;
+      details.append(name, family, quantity, brands);
+    }
+  })
+});
 
- 
+

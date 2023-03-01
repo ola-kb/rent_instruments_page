@@ -9,8 +9,9 @@
         <title>Instruments</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
-          rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+            rel="stylesheet">
     </head>
     <body>
         <body>
@@ -27,92 +28,94 @@
                 </nav>
             </header>
             <main>
-            <div  class="describe">
-                <p class="decribe-details"> If you need more details about the instruments for rent, choose instrument and click on its image below:</p>
+                <div class="describe">
+                    <p class="decribe-details"> If you need more details about
+                        the instruments for rent, choose instrument and click on
+                        its image below:</p>
+                </div>
             </div>
+            <div class="describe hidden" id="details">
+
+            </div>
+        </main>
+
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div id="violinMore" class="mySlides fade">
+                <div class="numbertext">1 / 9</div>
+                <img src="/pictures/violin.jpg">
+                <div class="text">Violin</div>
+            </div>
+
+            <div id="celloMore" class="mySlides fade">
+                <div class="numbertext">2 / 9</div>
+                <img src="/pictures/cello.jpg">
+                <div class="text">Cello</div>
+            </div>
+
+            <div id="doubleBassMore" class="mySlides fade">
+                <div class="numbertext">3 / 9</div>
+                <img src="/pictures/double bass.jpg">
+                <div class="text">Double bass</div>
+            </div>
+
+            <div id="guitarMore" class="mySlides fade">
+                <div class="numbertext">4 / 9</div>
+                <img src="/pictures/guitar.jpg">
+                <div class="text">Guitar</div>
+            </div>
+
+            <div id="fluteMore" class="mySlides fade">
+                <div class="numbertext">5 / 9</div>
+                <img src="/pictures/flute.jpg">
+                <div class="text">Flute</div>
+            </div>
+
+            <div id="clarinetMore" class="mySlides fade">
+                <div class="numbertext">6 / 9</div>
+                <img src="/pictures/clarinet.jpg">
+                <div class="text">Clarinet</div>
+            </div>
+
+            <div id="saxophoneMore" class="mySlides fade">
+                <div class="numbertext">7 / 9</div>
+                <img src="/pictures/saxo.jpg">
+                <div class="text">Saxophone</div>
+            </div>
+
+            <div id="hornMore" class="mySlides fade">
+                <div class="numbertext">8 / 9</div>
+                <img src="/pictures/horn.jpg">
+                <div class="text">Horn</div>
+            </div>
+
+            <div id="trumpetMore" class="mySlides fade">
+                <div class="numbertext">9 / 9</div>
+                <img src="/pictures/trumpet.jpg">
+                <div class="text">Trumpet</div>
+            </div>
+
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-        <div  class="describe hidden" id="details">
-        
-      </div>
-      </main>
+        <br>
 
-            <div class="slideshow-container">
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
 
-                <!-- Full-width images with number and caption text -->
-                <div id="violinMore" class="mySlides fade">
-                  <div class="numbertext">1 / 9</div>
-                  <img src="/pictures/violin.jpg">
-                  <div class="text">Violin</div>
-                </div>
-              
-                <div id="celloMore" class="mySlides fade">
-                  <div class="numbertext">2 / 9</div>
-                  <img src="/pictures/cello.jpg">
-                  <div class="text">Cello</div>
-                </div>
-              
-                <div id="doubleBassMore"class="mySlides fade">
-                    <div class="numbertext">3 / 9</div>
-                    <img src="/pictures/double bass.jpg">
-                    <div class="text">Double bass</div>
-                </div>
-
-                <div id="guitarMore" class="mySlides fade">
-                  <div class="numbertext">4 / 9</div>
-                  <img src="/pictures/guitar.jpg">
-                  <div class="text">Guitar</div>
-                </div>
-
-                <div id="fluteMore" class="mySlides fade">
-                    <div class="numbertext">5 / 9</div>
-                    <img src="/pictures/flute.jpg">
-                    <div class="text">Flute</div>
-                </div>
-
-                <div id="clarinetMore" class="mySlides fade">
-                    <div class="numbertext">6 / 9</div>
-                    <img src="/pictures/clarinet.jpg">
-                    <div class="text">Clarinet</div>
-                </div>
-
-                <div id="saxophoneMore" class="mySlides fade">
-                    <div class="numbertext">7 / 9</div>
-                    <img src="/pictures/saxo.jpg">
-                    <div class="text">Saxophone</div>
-                </div>
-              
-                <div id="hornMore" class="mySlides fade">
-                    <div class="numbertext">8 / 9</div>
-                    <img src="/pictures/horn.jpg">
-                    <div class="text">Horn</div>
-                </div>
-
-                <div id="trumpetMore" class="mySlides fade">
-                    <div class="numbertext">9 / 9</div>
-                    <img src="/pictures/trumpet.jpg">
-                    <div class="text">Trumpet</div>
-                </div>
-
-
-                <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-              </div>
-              <br>
-              
-              <!-- The dots/circles -->
-              <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-                <span class="dot" onclick="currentSlide(5)"></span>
-                <span class="dot" onclick="currentSlide(6)"></span>
-                <span class="dot" onclick="currentSlide(7)"></span>
-                <span class="dot" onclick="currentSlide(8)"></span>
-                <span class="dot" onclick="currentSlide(9)"></span>
-              
-              <script src="slider.js"></script>
-              <script src="instr.js"></script>
+            <script src="slider.js"></script>
+            <script src="instr.js"></script>
         </body>
     </html>
