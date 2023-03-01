@@ -1,0 +1,55 @@
+body {
+    box-sizing: border-box;
+    background-image: url("pictures/icon-main.jpg");
+    background-position: center;
+    background-size: cover;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+  }
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+   #header-logo {
+     width: 10rem;
+    height: 10rem;
+  }
+  
+  
+  #nav-bar ul a {
+    display: inline-flex;
+   justify-content: space-evenly;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 16px;
+    color: #747272;
+  } 
+
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 10rem 5rem;
+
+  }
+ h1{
+  font-size: 4rem;
+  /* width: 30%; */
+ }
+ #info {
+    align-self: flex-end;
+    width: 30%;
+   
+  }
+
+  #rules {
+    width: 30%;
+  }

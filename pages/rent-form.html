@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="form.css">
+        <title>Rent-form</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+          rel="stylesheet">
+    </head>
+    <body>
+        <header id="header">
+            <div class="logo">
+                <img id="header-logo" src="/pictures/house.png" alt="Logo">
+            </div>
+            <nav id="nav-bar">
+                <ul>
+                    <a class="nav-link" href="/index.html">/Home</a>
+                    <a class="nav-link" href="/pages/instruments.html">/Instruments</a>
+                    <a class="nav-link" href="/pages/rent-form.html">/Rent-form</a>
+                </ul>
+            </nav>
+        </header>
+    
+        <fieldset>
+            <form id="rental-form" action="/pages/form-get.html" method="get">
+<!-- child's details -->
+        <div class="form-group">
+            <label for="child-name" id="child-name-label">Child Name:</label><br>
+            <input type="text" id="child-name" name="name" placeholder="Enter child name"  class="one" required><br></br>
+        </div>
+        <div class="form-group">
+            <label for="child-surname" id="child-surname-label">Child Surname:</label><br>
+            <input type="text" id="child-surname" name="surname" placeholder="Enter child surname"  class="one" required><br></br>
+        </div>
+        <div class="form-group">
+            <p>Does child is a student of Fake Music School?</p>
+            <div class="radioType">
+                <input type="radio" id="yes" name="answer" value="Yes"/>
+                <label for="yes">Yes</label><br>
+            </div>
+            <div class="radioType">
+                <input type="radio" id="no" name="answer" value="No"/>
+                <label for="no">No</label><br><br>
+            </div>
+        </div>
+<!-- parent's / carer's details -->
+        <div class="form-group">
+            <label for="carer-name" id="carer-name-label">Parent/Carer Name:</label><br>
+            <input type="text" id="carer-name" name="name" placeholder="Enter parent/carer name"  class="one" required><br></br>
+        </div>
+        <div class="form-group">
+            <label for="carer-surname" id="carer-surname-label">Parent/Carer Surname:</label><br>
+            <input type="text" id="carer-surname" name="name" placeholder="Enter parent/carer surname"  class="one" required><br></br>
+        </div>
+        <div class="form-group">
+            <label for="email" id="email-label">Parent/Carer Email:</label><br>
+            <input type="email" id="email" name="email" class="one" placeholder="Enter Email"required><br><br>
+        </div>
+        <div class="form-group">
+            <label for="number" id="number-label">Phone number:</label><br>
+            <input type="number" id="number" name="phone"  placeholder="Phone number" class="one"required><br><br>
+        </div>
+<!-- about rental instrument -->
+       <div class="form-group">
+            <p>Choose the instrument</p>
+            <select name="instrument" id="dropdown" class="form-control">
+            <option disabled selected value>Choose the instrument</option>
+            <option>Violin</option>
+            <option>Cello</option>
+            <option>Double bass</option>
+            <option>Guitar</option>
+            <option>Flute</option>
+            <option>Clarinet Es</option>
+            <option>Saxophone soprano</option>
+            <option>Saxophone alto</option>
+            <option>Trumpet</option>
+            <option>Horn</option>
+            <option></option>
+            </select><br></br>
+        </div>
+        <div class="form-group">
+            <p>Place for your comment</p>
+            <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment"></textarea><br></br>
+        </div>
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+              </form>
+              </div>
+              </fieldset>
+    </body>
+</html>
