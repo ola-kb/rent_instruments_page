@@ -14,7 +14,7 @@ input.radioType {
     display: inline;
 }
 
-input[type=text], input[type=email], input[type=number], select, textarea {
+input[type=text], input[type=email], input[type=number], input[type=tel], select, textarea {
   
     padding: 5px 5px 8px 0px;
     width: 100%;
